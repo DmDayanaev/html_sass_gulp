@@ -1,0 +1,30 @@
+@mixin heading {
+		display: inline-block;
+		color: white;
+		border-radius: 4px;
+		margin: 10px 0px;
+		padding: 3px;
+		font-size: 20px;
+	}
+	
+.right {
+	margin-left: 36%;
+	padding: 20px;
+	
+
+	&__heading {
+		@include heading;
+		background-color: $color--dark-blue;
+	}
+	&__heading-light {
+		@include heading;
+		background-color: $color--gray;
+	}
+	&__years {
+		width: 100px;
+		float: left;
+	}
+	&__text {
+		margin-left: 150px
+	}
+}
