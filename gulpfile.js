@@ -1,6 +1,8 @@
 	const gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
+	minify = require('gulp-csso'),
+	rename = require('gulp-rename'),
 	STYLES_SRC = './sass',
     STYLES_DEST = './css';
 
@@ -11,6 +13,9 @@ gulp.task('styles', () => {
         .pipe(autoprefixer({
             browsers: ['last 3 versions']
         }))
+		.pipe(gulp.dest(STYLES_DEST))
+		.pipe(minify())
+		.pipe(rename('page.min.css'))
         .pipe(gulp.dest(STYLES_DEST));
 });
 
