@@ -1,0 +1,14 @@
+@mixin mobile {
+	@media (max-width: $tablet) {
+		@content;
+	}
+}
+@mixin heading {
+		display: inline-block;
+		color: white;
+		border-radius: 4px;
+		margin: 10px 0px;
+		padding: 3px;
+		font-size: 20px;
+	}
+	

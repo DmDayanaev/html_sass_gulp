@@ -35,4 +35,17 @@
 		height: 20px;
 		background-color: $color--dark-blue;
 	}
+	@include mobile {
+		& {
+			width: 100%;
+			margin: auto;
+			padding: 2%;
+			float: none;
+			background-color: #e6e6e6; 
+		}
+		&__logo {
+			width: 250px;
+			margin: auto;
+		}
+	}
 }
