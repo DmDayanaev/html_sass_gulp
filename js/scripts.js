@@ -1,4 +1,4 @@
-var age = prompt("Сколько вам лет?", 16);
+var age = prompt("Сколько вам лет?");
 if (age >= 18) {
 	var confirm = confirm("Готовы ли Вы посетить сайт?");
 		if (confirm) {
