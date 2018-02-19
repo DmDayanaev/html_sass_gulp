@@ -48,7 +48,7 @@ function checkPassword() {
 	switch(pas) {
 			case "123":
 			case "777":
-			case "333":	alert ("Добро пожаловать " +login"); 
+			case "333":	alert ("Добро пожаловать " +login); 
 			break;
 			default: alert ("Пароль не верный");
 		}
